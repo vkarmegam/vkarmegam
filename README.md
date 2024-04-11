@@ -17,6 +17,10 @@ Here are some ideas to get you started:
 
 
 <a href="https://www.linkedin.com/in/karmegamv/"><i class="fab fa-linkedin"> Linkedin</i></a>
+
+<a href="https://app.daily.dev/vkarmegam"><img src="https://api.daily.dev/devcards/v2/Ie08GEimhf4muDHXkJ4qd.png?type=wide&r=jtw" width="652" alt="karmegam's Dev Card"/></a>
+
+
 <div class="col-md-4 col-sm-12 text-center">
             		<div class="desktop shadow-lg">
             		<div class="d-flex flex-row justify-content-center">
