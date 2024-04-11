@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+<a href="https://www.linkedin.com/in/karmegamv/"><i class="fab fa-linkedin"> Linkedin</i></a>
