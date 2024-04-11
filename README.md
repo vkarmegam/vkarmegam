@@ -15,7 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-
 <a href="https://www.linkedin.com/in/karmegamv/"><i class="fab fa-linkedin"> Linkedin</i></a>
 
 <a href="https://app.daily.dev/vkarmegam"><img src="https://api.daily.dev/devcards/v2/Ie08GEimhf4muDHXkJ4qd.png?type=wide&r=jtw" width="652" alt="karmegam's Dev Card"/></a>
