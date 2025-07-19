@@ -3,565 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karmegam Vadivel - Resume</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Karmegam Vadivel - GitHub Intro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.5; /* Adjusted for tighter spacing */
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
             color: #333;
-            margin: 0;
-            padding: 20px;
             background-color: #f4f7f6;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            font-size: 14px; /* Base font size */
-        }
-
-
-        .resume-container {
-            width: 100%;
-            max-width: 850px; /* Standard resume width */
-            background-color: #ffffff;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box; /* Include padding in width */
+            box-sizing: border-box;
         }
-
-
-        /* Header Section */
-        .header {
-            text-align: center;
-            margin-bottom: 20px; /* Reduced margin */
-            border-bottom: 1px solid #e0e0e0; /* Thinner border */
-            padding-bottom: 15px;
-        }
-
-
-        .header h1 {
-            font-size: 2.2em; /* Slightly smaller */
+        h1 {
             color: #2c3e50;
-            margin-bottom: 5px;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #4CAF50; /* Green accent */
+            padding-bottom: 10px;
         }
-
-
-        .header p {
-            font-size: 1em; /* Adjusted */
-            color: #555;
-            margin-bottom: 10px;
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #5cb85c; /* Lighter green accent */
+            padding-bottom: 8px;
         }
-
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            font-size: 0.9em; /* Adjusted */
-            color: #666;
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.7;
         }
-
-
-        .contact-info span {
+        strong {
+            color: #2980b9; /* A distinct color for strong text */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        ul li {
+            background-color: #e8f5e9; /* Light green background for list items */
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-
-
-        .contact-info a {
-            color: #007bff;
+        ul li::before {
+            content: '✅'; /* Checkmark icon */
+            font-size: 1.2em;
+            color: #4CAF50;
+        }
+        ul li strong {
+            color: #2c3e50; /* Darker color for bold text in lists */
+        }
+        a {
+            color: #3498db; /* Blue for links */
             text-decoration: none;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
-
-
-        .contact-info a:hover {
-            color: #0056b3;
-        }
-
-
-        /* Section Styling */
-        .section {
-            margin-bottom: 20px; /* Reduced margin */
-        }
-
-
-        .section-title {
-            font-size: 1.3em; /* Adjusted */
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-
-        /* Professional Summary */
-        .summary-text {
-            font-size: 0.95em; /* Adjusted */
-            color: #444;
-            margin-bottom: 10px; /* Reduced margin */
-        }
-
-
-        .summary-text strong {
-            color: #2c3e50;
-        }
-
-
-        /* Skills Summary */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            gap: 10px 20px; /* Vertical and horizontal gap */
-            font-size: 0.95em;
-        }
-
-
-        .skill-category {
-            margin-bottom: 10px; /* Space between categories */
-        }
-
-
-        .skill-category-title {
-            font-weight: bold;
-            color: #3498db;
-            margin-bottom: 5px;
-        }
-
-
-        .skill-items {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-
-        .skill-items li {
-            margin-bottom: 3px;
-        }
-
-
-        /* Experience and Education Timeline */
-        .timeline {
-            margin-top: 10px;
-        }
-
-
-        .timeline-item {
-            margin-bottom: 15px; /* Reduced margin */
-            position: relative;
-            padding-left: 20px;
-        }
-
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
-
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 5px;
-            width: 8px;
-            height: 8px;
-            background-color: #3498db;
-            border-radius: 50%;
-        }
-
-
-        .timeline-item h3 {
-            font-size: 1.1em; /* Adjusted */
-            color: #2c3e50;
-            margin-bottom: 2px;
-        }
-
-
-        .timeline-item .company,
-        .timeline-item .degree {
-            font-weight: bold;
-            color: #555;
-            font-size: 0.95em;
-            margin-bottom: 2px;
-        }
-
-
-        .timeline-item .duration {
-            font-size: 0.85em;
-            color: #777;
-            margin-bottom: 8px;
-        }
-
-
-        .timeline-item ul {
-            list-style: disc; /* Use disc for bullet points */
-            padding-left: 20px;
-            margin: 0;
-        }
-
-
-        .timeline-item li {
-            font-size: 0.9em;
-            color: #444;
-            margin-bottom: 5px;
-        }
-
-
-        .timeline-item li strong {
-            color: #2c3e50;
-        }
-
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Single column for projects */
-            gap: 15px; /* Reduced gap */
-        }
-
-
-        .project-item {
-            background-color: #f9f9f9;
-            border: 1px solid #eee;
-            border-radius: 5px;
-            padding: 15px;
-        }
-
-
-        .project-item h4 {
-            font-size: 1em; /* Adjusted */
-            color: #3498db;
-            margin-bottom: 5px;
-        }
-
-
-        .project-item p {
-            font-size: 0.9em;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-
-        .project-tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-
-
-        .tech-tag {
-            background-color: #e9ecef;
-            color: #495057;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 0.8em;
-        }
-
-
-        .project-links a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 0.9em;
-            margin-right: 10px;
-        }
-        .project-links a:hover {
+        a:hover {
+            color: #2980b9;
             text-decoration: underline;
         }
-
-
-        /* Certifications Section */
-        .certifications-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .connect-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            text-align: center;
         }
-
-
-        .certifications-list li {
-            font-size: 0.95em;
-            color: #444;
-            margin-bottom: 5px;
+        .connect-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-
-
-        .certifications-list li strong {
-            color: #2c3e50;
-        }
-
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .resume-container {
-                padding: 20px;
-            }
-            .header h1 {
-                font-size: 2em;
-            }
-            .header p {
-                font-size: 0.9em;
-            }
-            .contact-info {
-                font-size: 0.85em;
-            }
-            .section-title {
-                font-size: 1.2em;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr; /* Stack skills on small screens */
-            }
-            .timeline-item h3 {
-                font-size: 1em;
-            }
-            .timeline-item .company,
-            .timeline-item .degree {
-                font-size: 0.9em;
-            }
-            .timeline-item .duration {
-                font-size: 0.8em;
-            }
-            .timeline-item li {
-                font-size: 0.85em;
-            }
-            .project-item h4 {
-                font-size: 0.95em;
-            }
-            .project-item p {
-                font-size: 0.85em;
-            }
-        }
-
-
-        @media print {
-            body {
-                padding: 0;
-                margin: 0;
-                background-color: #fff;
-            }
-            .resume-container {
-                box-shadow: none;
-                border-radius: 0;
-                padding: 15mm; /* Use mm for print sizing */
-                max-width: 210mm; /* A4 width */
-                min-height: 297mm; /* A4 height */
-            }
-            .section {
-                margin-bottom: 15px; /* Adjust spacing for print */
-            }
-            .section-title {
-                margin-bottom: 10px;
-            }
-            .timeline-item {
-                margin-bottom: 10px;
-            }
-            .timeline-item ul {
-                padding-left: 15px;
-            }
-            .project-item {
-                padding: 10px;
-            }
+        .connect-links a:hover {
+            background-color: #45a049;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="resume-container">
-        <!-- Header -->
-        <div class="header">
-            <h1>Karmegam Vadivel</h1>
-            <p>Sr. Software Engineer | Backend Specialist</p>
-            <div class="contact-info">
-                <span><i class="fas fa-envelope"></i> vkarmegam97@gmail.com</span>
-                <span><i class="fas fa-phone"></i> +91-8344355512</span>
-                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/karmegam-v" target="_blank">linkedin.com/in/karmegam-v</a></span>
-            </div>
-        </div>
 
+    <h1>Karmegam Vadivel - Senior Software Engineer</h1>
 
-        <!-- Professional Summary -->
-        <div class="section">
-            <h2 class="section-title">Professional Summary</h2>
-            <p class="summary-text">
-                An enthusiastic and confident <strong>Software Engineer</strong> with over 2 years of experience in delivering high-performance backend solutions using <strong>Golang</strong>. My journey, from humble beginnings as a first-generation graduate to shaping young minds as an instructor, has uniquely prepared me to excel in the fast-paced world of software engineering. I specialize in designing and implementing scalable systems, focusing on <strong>microservices architecture, REST APIs, and cloud platforms like AWS</strong>.
-            </p>
-            <p class="summary-text">
-                Proficient in <strong>Golang, Python, Cassandra, Linux, Windows</strong> and monitoring systems like <strong>Prometheus</strong>, I excel at solving production issues and optimizing database performance. I also have a track record of mentoring junior developers and conducting code reviews, fostering team growth and collaboration.
-            </p>
-            <p class="summary-text">
-                With strong communication skills and a passion for continuous learning, I am committed to building reliable, scalable software solutions that exceed client expectations.
-            </p>
-        </div>
+    <p>Hello! I'm <strong>Karmegam Vadivel</strong>, a passionate Senior Software Engineer with over 2 years of specialized experience in backend development, microservices architecture, and cloud platforms. My expertise lies in building scalable, high-performance, and production-ready solutions, primarily using <strong>Golang</strong>.</p>
 
+    <p>I thrive on tackling complex technical challenges and am committed to delivering robust software that drives business value. My background also includes mentoring junior developers and leading cross-functional teams to achieve exceptional results.</p>
 
-        <!-- Skills Summary -->
-        <div class="section">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-category-title">Languages:</div>
-                    <ul class="skill-items">
-                        <li>Golang (Gin, REST APIs, Microservices, Concurrency, NATS, WebSockets)</li>
-                        <li>Python (Flask, REST APIs, TK, Numpy, Pandas, Matplotlib, Seaborn, Selenium)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Databases:</div>
-                    <ul class="skill-items">
-                        <li>Cassandra</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">DevOps:</div>
-                    <ul class="skill-items">
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Bash</li>
-                        <li>Powershell</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Cloud:</div>
-                    <ul class="skill-items">
-                        <li>AWS (EC2, S3, Lambda)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Monitoring:</div>
-                    <ul class="skill-items">
-                        <li>Prometheus</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Tools:</div>
-                    <ul class="skill-items">
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>GitLab</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Machine Learning:</div>
-                    <ul class="skill-items">
-                        <li>Basics of ML</li>
-                        <li>Data Analysis with Python</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <h2>My Core Expertise Includes:</h2>
+    <ul>
+        <li><strong>Programming Languages:</strong> Golang, Python, JavaScript, TypeScript, SQL</li>
+        <li><strong>Backend & APIs:</strong> Gin Framework, REST APIs, Microservices, WebSockets, NATS, Flask, Concurrency</li>
+        <li><strong>Databases:</strong> Cassandra, SQL</li>
+        <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda), Docker, Kubernetes, Bash, Powershell</li>
+        <li><strong>Monitoring & Tools:</strong> Prometheus, Git, GitHub, GitLab</li>
+        <li><strong>Machine Learning & Data:</strong> Basics of ML, Data Analysis (Python), Numpy, Matplotlib, Seaborn</li>
+    </ul>
 
+    <h2>What I'm Passionate About:</h2>
+    <ul>
+        <li>Designing and implementing resilient and scalable backend systems.</li>
+        <li>Automating complex processes to enhance efficiency and reliability.</li>
+        <li>Leveraging cloud technologies for robust deployments.</li>
+        <li>Mentoring and fostering growth within development teams.</li>
+        <li>Exploring and integrating cutting-edge technologies like AI into practical applications.</li>
+    </ul>
 
-        <!-- Experience -->
-        <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Sr. Software Engineer - L2</h3>
-                    <div class="company">Algomox Private Limited, Bengaluru</div>
-                    <div class="duration">October 2023 - Present</div>
-                    <ul>
-                        <li>Led the development of a Windows and Linux Patch Management platform integrated with <strong>AIOps</strong> using <strong>Golang, WebSockets, and NATS messaging</strong>, streamlining patch management processes across distributed environments.</li>
-                        <li>Led the development of a <strong>Kubernetes monitoring platform</strong> using <strong>Golang</strong>, integrated with <strong>AIOps</strong>, automating monitoring tasks, optimizing performance, and providing advanced analytics for Kubernetes clusters to ensure high availability across distributed environments, working on both backend development with Golang and frontend development with Angular and TypeScript.</li>
-                        <li>Designed and implemented an automation solution for integrating <strong>Azure Active Directory (Azure AD)</strong> with On-Premises Active Directory (AD) using <strong>Microsoft Graph API and REST APIs</strong>, reducing manual intervention and improving system integration.</li>
-                        <li>Played a key role in resolving critical production issues, ensuring high system availability and reducing downtime for a seamless user experience.</li>
-                        <li>Implemented proactive monitoring and alerting systems using <strong>Prometheus</strong>, enabling early detection of potential issues and improving system reliability.</li>
-                        <li>Mentored junior developers through code reviews, fostering a collaborative and learning-focused environment to boost team productivity and code quality.</li>
-                        <li>Optimized <strong>Cassandra</strong> database queries and data storage processes.</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Software Engineer - L1</h3>
-                    <div class="company">Algomox Private Limited, Bengaluru</div>
-                    <div class="duration">November 2022 - October 2023</div>
-                    <ul>
-                        <li>Developed and maintained <strong>Golang-based backend services</strong> and APIs for Algomox's core applications, focusing on scalability and performance.</li>
-                        <li>Worked collaboratively with cross-functional teams, including front-end developers, product managers, and DevOps engineers, to deliver integrated solutions.</li>
-                        <li>Wrote comprehensive unit tests, ensuring high code quality and reducing production issues, contributing to improved system stability.</li>
-                        <li>Developed an automated tool for enhancing firewall reporting capabilities in <strong>PFsense</strong>, streamlining network security operations and reporting.</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Instructor</h3>
-                    <div class="company">Skill Development Centre (RKMPTC), Chennai</div>
-                    <div class="duration">July 2020 - October 2022</div>
-                    <ul>
-                        <li>Conducted training sessions on <strong>ZOHO Creator, ZOHO MDM, and ZOHO Sites</strong>, empowering students and professionals to create custom applications, manage mobile devices, and build websites using ZOHO's suite of tools.</li>
-                        <li>Mentored students in project-based learning, fostering their problem-solving abilities and technical acumen.</li>
-                        <li>Managed server administration and network monitoring, ensuring system performance and security for training environments.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <p>Feel free to explore my repositories to see my work in action!</p>
 
-
-        <!-- Projects -->
-        <div class="section">
-            <h2 class="section-title">Key Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <h4>CreatorEdge Enhanced by Gemini AI</h4>
-                    <p>Developed an AI-powered tool that delivers real-time analytics and data-driven insights for content creators. Optimized content strategies using Gemini API and predictive analysis to drive engagement and performance.</p>
-                    <div class="project-tech-tags">
-                        <span class="tech-tag">Gemini API</span>
-                        <span class="tech-tag">AI</span>
-                        <span class="tech-tag">Advanced Analytics</span>
-                        <span class="tech-tag">Flutter</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://youtu.be/ngc57WlpL9g?si=7MPi1Pusxa3OqrM9" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <h4>DesignFusion: AI-Driven Interior Design</h4>
-                    <p>Created an AI-driven interior design app providing personalized recommendations and 3D visualizations. Simplified the design process with data-driven insights tailored to user preferences.</p>
-                    <div class="project-tech-tags">
-                        <span class="tech-tag">Gemini API</span>
-                        <span class="tech-tag">AI</span>
-                        <span class="tech-tag">3D Visualization</span>
-                        <span class="tech-tag">Flutter</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://youtu.be/tFa5tL5rbE0?si=jYqSAa4yjSoz-zrY" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Certifications -->
-        <div class="section">
-            <h2 class="section-title">Certifications</h2>
-            <ul class="certifications-list">
-                <li><strong>Softlogic Academy:</strong> Machine Learning [SLADS072020]</li>
-                <li><strong>Softlogic Academy:</strong> Python Programming [SLADS072020]</li>
-                <li><strong>Cisco Networking Academy - CCNA R&S [56362465]:</strong> Introduction to Networks, Routing and Switching, Scaling Networks, Connecting Networks</li>
-            </ul>
-        </div>
-
-
-        <!-- Key Skills / Languages (from resume content) -->
-        <div class="section">
-            <h2 class="section-title">Key Skills & Languages</h2>
-            <ul class="certifications-list"> <!-- Reusing list style for simplicity -->
-                <li>Self-learning and adaptability</li>
-                <li>Strong communication and listening skills</li>
-                <li>Collaboration and teamwork</li>
-                <li>Trustworthy and open-minded approach</li>
-                <li>Problem-solving and critical thinking</li>
-                <li><strong>Languages:</strong> English (Proficient), Tamil (Native)</li>
-            </ul>
-        </div>
-
-
+    <div class="connect-links">
+        <strong>Connect with me:</strong>
+        <p>
+            <a href="https://www.linkedin.com/in/karmegam-v" target="_blank">LinkedIn</a>
+            <a href="mailto:vkarmegam97@gmail.com">Email</a>
+        </p>
     </div>
+
 </body>
 </html>
-
-
-
