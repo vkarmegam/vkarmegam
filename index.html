@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmegam Vadivel - GitHub Intro</title>
+    <!-- Using Inter font for a modern, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7; /* Increased line height for better readability */
+            color: #333; /* Soft black for main text */
+            background-color: #fcfcfc; /* Very light, almost white background */
+            padding: 30px; /* More padding around the content */
+            max-width: 850px; /* Slightly wider content area */
+            margin: 30px auto;
+            border-radius: 10px; /* Subtle rounded corners */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Softer, more spread out shadow */
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #2c3e50; /* Darker blue-gray for headings */
+            font-size: 2.8em; /* Larger, more impactful main heading */
+            margin-bottom: 20px;
+            border-bottom: 2px solid #607d8b; /* Muted blue-gray border */
+            padding-bottom: 12px;
+            font-weight: 700; /* Bolder */
+        }
+        h2 {
+            color: #34495e; /* Slightly lighter blue-gray for subheadings */
+            font-size: 2em; /* Larger subheadings */
+            margin-top: 40px; /* More space above subheadings */
+            margin-bottom: 20px;
+            border-bottom: 1px solid #90a4ae; /* Lighter, more subtle border */
+            padding-bottom: 10px;
+            font-weight: 600; /* Medium bold */
+        }
+        p {
+            margin-bottom: 18px; /* More space between paragraphs */
+            font-size: 1.1em;
+            line-height: 1.8; /* Increased line height for paragraphs */
+        }
+        strong {
+            color: #1a73e8; /* A professional blue for strong text */
+            font-weight: 600;
+        }
+        ul {
+            list-style: none; /* Remove default list style */
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        ul li {
+            background-color: #eef4f7; /* Very light blue-gray background for list items */
+            margin-bottom: 10px; /* More space between list items */
+            padding: 12px 20px; /* More padding */
+            border-radius: 6px; /* Slightly less rounded for a crisp look */
+            display: flex;
+            align-items: flex-start; /* Align icon to the top of text */
+            gap: 12px; /* More space between icon and text */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Very subtle shadow */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+        }
+        ul li:hover {
+            transform: translateY(-3px); /* Slight lift on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Slightly more prominent shadow on hover */
+        }
+        ul li::before {
+            content: '•'; /* Simple, professional bullet point */
+            font-size: 1.5em; /* Larger bullet */
+            color: #1a73e8; /* Blue color for bullet */
+            line-height: 1; /* Align with text baseline */
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+        ul li strong {
+            color: #34495e; /* Darker color for bold text in lists */
+            font-weight: 600;
+        }
+        a {
+            color: #1a73e8; /* Consistent professional blue for links */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        a:hover {
+            color: #1565c0; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+        .connect-links {
+            margin-top: 40px; /* More space above connect section */
+            padding-top: 25px;
+            border-top: 1px solid #e0e0e0; /* Solid, subtle border */
+            text-align: center;
+        }
+        .connect-links strong {
+            display: block; /* Make "Connect with me" a block element */
+            margin-bottom: 15px; /* Space below it */
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .connect-links .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Space between buttons */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+        .connect-links a.button {
+            display: inline-flex; /* Use flex for icon and text alignment */
+            align-items: center;
+            gap: 8px; /* Space between icon and text */
+            margin: 5px 0; /* Small vertical margin for wrapping */
+            padding: 12px 25px; /* More padding for button feel */
+            background-color: #1a73e8; /* Professional blue button */
+            color: white;
+            border-radius: 5px; /* Slightly rounded corners */
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .connect-links a.button:hover {
+            background-color: #1565c0; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+            text-decoration: none; /* Ensure no underline on hover */
+        }
+        .connect-links a.button i {
+            font-size: 1.1em; /* Adjust icon size */
+        }
+    </style>
+    <!-- Font Awesome for social icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Karmegam Vadivel - Senior Software Engineer</h1>
+
+    <p>Hello! I'm <strong>Karmegam Vadivel</strong>, a passionate Senior Software Engineer with over 2 years of specialized experience in backend development, microservices architecture, and cloud platforms. My expertise lies in building scalable, high-performance, and production-ready solutions, primarily using <strong>Golang</strong>.</p>
+
+    <p>I thrive on tackling complex technical challenges and am committed to delivering robust software that drives business value. My background also includes mentoring junior developers and leading cross-functional teams to achieve exceptional results.</p>
+
+    <h2>My Core Expertise Includes:</h2>
+    <ul>
+        <li><strong>Programming Languages:</strong> Golang, Python, JavaScript, TypeScript, SQL</li>
+        <li><strong>Backend & APIs:</strong> Gin Framework, REST APIs, Microservices, WebSockets, NATS, Flask, Concurrency</li>
+        <li><strong>Databases:</strong> Cassandra, SQL</li>
+        <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda), Docker, Kubernetes, Bash, Powershell</li>
+        <li><strong>Monitoring & Tools:</strong> Prometheus, Git, GitHub, GitLab</li>
+        <li><strong>Machine Learning & Data:</strong> Basics of ML, Data Analysis (Python), Numpy, Matplotlib, Seaborn</li>
+    </ul>
+
+    <h2>What I'm Passionate About:</h2>
+    <ul>
+        <li>Designing and implementing resilient and scalable backend systems.</li>
+        <li>Automating complex processes to enhance efficiency and reliability.</li>
+        <li>Leveraging cloud technologies for robust deployments.</li>
+        <li>Mentoring and fostering growth within development teams.</li>
+        <li>Exploring and integrating cutting-edge technologies like AI into practical applications.</li>
+    </ul>
+
+    <p>Feel free to explore my repositories to see my work in action!</p>
+
+    <div class="connect-links">
+        <strong>Connect with me:</strong>
+        <div class="button-group">
+            <a href="https://www.linkedin.com/in/karmegam-v" target="_blank" class="button">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:vkarmegam97@gmail.com" class="button">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
