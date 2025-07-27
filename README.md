@@ -17,12 +17,5 @@ Here are some ideas to get you started:
 
 Karmegam Vadivel
 
-Sr. Software Engineer | Golang
-
-Passionate Software Engineer with 2.9+ years of expertise in Golang, microservices, and cloud platforms. Specialized in building scalable backend solutions and leading development teams to deliver exceptional results.
-
-
 Get In Touch 
 https://www.linkedin.com/in/karmegamv
-
-+91-8344355512
